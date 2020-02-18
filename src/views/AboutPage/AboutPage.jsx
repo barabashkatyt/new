@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 import avatar from '../../images/avatar.PNG'
 import profileImage from '../../images/cv_img.PNG'
-import { Header } from '../../components';
+import { Header, Footer  } from '../../components';
 
 
 
@@ -17,6 +17,7 @@ import { Header } from '../../components';
       
 <Fragment>
         <Header/>
+        <div class="about">
         <div class="about__center">
             <aside class="center--aside">
                 <ul>
@@ -50,21 +51,8 @@ import { Header } from '../../components';
                 </article> 
             </div>
         </div>
-        <footer class="about__footer">
-            <div class="about__footer--left">
-                <a href="#">© Дизайн сайта был разработан в школе </a>
-            </div>
-            <div class="about__footer--right">
-                <ul class="social-links">
-                    <li class="social-links__link"><a href="#"  title="facebook"></a></li>
-                    <li class="social-links__link"><a href="#"  title="B"></a></li>
-                    <li class="social-links__link"><a href="#"  title="twitter"></a></li>   
-                </ul>
-
-            </div>   
-
-        </footer>
-      
+        <Footer />
+        </div>
       </Fragment>
     )
   }

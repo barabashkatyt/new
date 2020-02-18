@@ -35,7 +35,7 @@ AboutHeader.LeftText = styled.div`
     font-weight: 500;
     line-height: 28px;
     margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     `
 AboutHeader.Right = styled.div`
     width:50%;
@@ -56,6 +56,7 @@ AboutHeader.RightLink = styled.div`
     font-family: "Fira Sans","Font Awesome",sans-serif;
     margin-top: 28px; 
     justify-content: center;
+    padding-left: 17px;
     padding-bottom: 20px;        
     border-bottom: 2px dotted #5ac7e5;
     position:relative;
