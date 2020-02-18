@@ -1,6 +1,14 @@
-.body {
-    margin: 0 !important;
+html {
+    height: 100%;
+    position: relative; 
+    overflow-y: auto;
 }
+
+.body {
+    height: 100%;
+    
+}
+
 
 .about {
     width: auto;
@@ -22,10 +30,10 @@
         }
 
     .about__header{
-        
+        //position: fixed;
         width: 100%;
         height: 80px;
-        margin: 0 auto ;
+        margin: 0 auto;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
         background-color: #ffffff;
         display: flex;
@@ -370,7 +378,10 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
+    html {
+        min-width: 350px;
+    }
     .about__header{
         display: flex;
         justify-content: space-between;
@@ -429,6 +440,7 @@
         display: flex;
         flex-direction: column;
         .center--aside{
+            text-align: center !important;
             margin: 2px 0 0 0 !important;
             padding: 0 !important;
             color: #414141;
@@ -437,13 +449,13 @@
             line-height: 20px !important;
             text-decoration: none;
             display: inline !important;
-            
+            width: 350px !important;
             background-color: #f6f6f6;
             text-align: center;
             ul, li, a {
                 
                 display: inline !important;
-                margin: 0 !important;
+                margin: 5px !important;
                 padding: 0 !important;
                 display: inline !important;
                 text-align: center;
@@ -476,17 +488,18 @@
                 border-radius: 50%;
                 margin-right: 90px !important;
                 margin-left: 90px !important;
-                margin-top: 30px;
+                margin-top: 10px !important;
                 margin-bottom: 10px !important;
                 border: 2px solid #fff;
             }
             .about__article{
                 .center--section-text{
                     margin-top: 0px !important;
+                    margin-bottom: 0px !important;
                     align-self: center;          
                     font-size: 14px;
                     //width: 348px;
-                    height: auto;
+                    height: 500px !important;
                     color: #646464;
                     font-size: 18px;
                     font-weight: 300;
@@ -508,7 +521,7 @@
                         
                         
                         width: auto;
-                        height: auto;
+                        height: 500px !important;
                         color: #646464;
                         font-size: 18px !important;
                         width: 296px;
@@ -534,6 +547,8 @@
                     //height: 40px;
                     text-decoration: none;
                     margin:0 auto !important;
+                    margin-top: 10px !important;
+                    margin-left: 90px !important;
                    
                                 
                 }
