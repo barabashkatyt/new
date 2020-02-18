@@ -13,7 +13,7 @@ import avatar from '../../images/avatar.PNG'
     return (
       
       <Fragment >
-        <div className="about">
+        <Fragment className="about">
             <Fragment>
             <header className="about__header">
             <div className="about__header--left">
@@ -119,7 +119,7 @@ import avatar from '../../images/avatar.PNG'
             </div>   
         </footer>
         </Fragment>
-    </div>
+    </Fragment>
       </Fragment>
       
     )

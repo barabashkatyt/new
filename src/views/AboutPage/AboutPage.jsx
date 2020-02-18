@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 import avatar from '../../images/avatar.PNG'
 import profileImage from '../../images/cv_img.PNG'
+import { Header } from '../../components';
 
 
 
@@ -15,26 +16,7 @@ import profileImage from '../../images/cv_img.PNG'
     return (
       
 <Fragment>
-    <div class="about">
-        <header class="about__header">
-            <div class="about__header--left">
-            <img src={avatar} class="about__header--left-image" alt="Cv image"></img>
-                <h3 class="about__header--left-text">Константин Константинов</h3>
-            </div>
-            <div class="about__header--right">
-                <a href="#" class="about__header--right header--right-link" >Мои контакты </a>
-                <div class="description">
-                    <div class="arrow"></div>
-                    <div class="text">
-                        <ul>
-                            <li><a href='#'>kostya@mail.ru</a></li>
-                            <li><a href='#'>+7 921 887 62 37</a></li>
-                            <li><a href='#'>kostik_</a></li>
-                        </ul> 
-                    </div>
-                </div>
-            </div>
-        </header>
+        <Header/>
         <div class="about__center">
             <aside class="center--aside">
                 <ul>
@@ -82,7 +64,7 @@ import profileImage from '../../images/cv_img.PNG'
             </div>   
 
         </footer>
-      </div>
+      
       </Fragment>
     )
   }

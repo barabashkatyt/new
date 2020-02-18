@@ -29,6 +29,7 @@ import avatar from '../../images/avatar.PNG'
         </div>
       </Fragment>
       
+      
     )
   }
   
