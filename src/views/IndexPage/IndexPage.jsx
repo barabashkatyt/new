@@ -23,18 +23,18 @@ HandleClick = () => {
        <Fragment >
          <html style ={{  backgroundImage: "url(" + backgroundImage + ")" }}>
          <div className = 'cardwrapper' 
-           >
-          
-           <div className = 'card'>
- 
-           <img src = {avatar} class="card__image" alt="Profile Image"></img>
- 
-             <h2 class="card__name">Константин  <br /> Константинов</h2>
- 
-             <div class="card__footer">
-               <Btn.Card onClick = {this.HandleClick}>Перейти на сайт</Btn.Card>
-                 
-             </div>
+      >
+    
+      <div className = 'card'>
+
+      <img src = {avatar} class="card__image" alt="Profile Image"></img>
+
+        <h2 class="card__name">Константин  <br /> Константинов</h2>
+
+        <div class="card__footer">
+          <Btn.Card onClick = {this.HandleClick}>Перейти на сайт</Btn.Card>
+            
+        </div>
            </div>            
          </div>
          </html>

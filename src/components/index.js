@@ -3,6 +3,7 @@ import Button from './Button'
 import Footer from './Footer'
 import Aside from './Aside'
 import Menu from './Menu'
+import PrivateRoute from './PrivateRoute'
 
 
 export {
@@ -10,5 +11,6 @@ export {
   Button,
   Footer,
   Aside,
-  Menu
+  Menu,
+  PrivateRoute
 }

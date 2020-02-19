@@ -15,10 +15,15 @@ const Header = () => {
 
   const content = (
     <div>
-      <p>Content</p>
-      <p>Content</p>
+      <ul>
+        <li><a href='#'>kostya@mail.ru</a></li>
+        <li><a href='#'>+7 921 887 62 37</a></li>
+        <li><a href='#'>kostik_</a></li>
+        </ul>
     </div>
   );
+
+  
   
   return (
     <AboutHeader>

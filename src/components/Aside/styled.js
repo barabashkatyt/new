@@ -3,32 +3,26 @@ import styled from 'styled-components'
 
 const CenterAside = styled.aside`
         width: 30%;
-        height: 100%;
         color: #414141;
         font-size: 18px;
         font-weight: 400;
         line-height: 24px;
         text-decoration: none;
-        font-weight: 400;
-        display: flex;
-        justify-content: flex-end;
+        //display: flex;
+        //justify-content: flex-end;
         background-color: #f6f6f6;
         text-align: end;
-        padding-right: 10px;
-
         margin-top: 2px;
-        padding-bottom: 20px;
         margin-left: 2px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        margin-right: 0px;
+        
         ul {
             width: 100%;
             text-align: end;
             padding: 20px;
             margin: 20px;
-        }
-
-        img {
-            width: 20px ;
-            height: 15px;
         }
 
         a {
