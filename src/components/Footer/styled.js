@@ -2,6 +2,7 @@ import styled from 'styled-components'
 //import { styleguide } from '../../constants'
 
 const AboutFooter = styled.footer`
+        list-decoration: none;
         position: fixed;
         margin: 0 auto;
         width: 100%;
@@ -38,7 +39,7 @@ const AboutFooter = styled.footer`
         height: 100%;
         display: flex;
         min-width: 300px;
-        
+        list-decoration:none;
         
             ul {
                 display:flex;

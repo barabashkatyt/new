@@ -5,6 +5,7 @@ import history from './history'
 import {IndexPage} from './views'
 import {AboutPage} from './views'
 import {CareerPage} from './views'
+import {PortfolioPage} from './views'
 import './styles/app.scss'
 
 function App () {
@@ -12,7 +13,7 @@ function App () {
     <Fragment>
       <Router history={history}>
         <Switch>
-          
+        <Route path='/portfolio' component={PortfolioPage} />
           <Route path='/career' component={CareerPage} />
           <Route path='/about' component={AboutPage} />
           <Route path='/' component={IndexPage} />

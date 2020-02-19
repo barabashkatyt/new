@@ -9,6 +9,7 @@ import profileImage from '../../images/cv_img.PNG'
 import { Header , Footer, Aside , Button} from '../../components';
 import {CenterAside} from '../../components/Aside/styled';
 import { ThemeConsumer } from 'styled-components';
+import { AntMenu } from '../../components/Menu/styled';
 
 
 
@@ -26,15 +27,9 @@ class AboutPage extends React.Component {
                     <Header/>
                     <div class="about">
                     <div class="about__center">
-                        <Aside >
-                        <CenterAside>
-                            <ul>
-                                <li class="active"><a href='/about.html'><span class="icon-user-secret"> </span>Обо мне</a></li>
-                                <li><a href='/career.html'><span class="icon-rocket"> </span>Карьерный путь</a></li>
-                                <li><a href='/portfolio.html'><span class="icon-suitcase"> </span>Портфолио </a></li>
-                            </ul>
-                            </CenterAside>
-                        </Aside>
+                        <Aside />
+                      
+                        
                         <div class="center--section">
                             <img src={profileImage} class="center--section-image" alt="Profile image"></img>
                             <article class="about__article">

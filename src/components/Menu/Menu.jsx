@@ -2,10 +2,11 @@ import React from 'react'
 
 import 'antd/dist/antd.css';
 import { Menu } from 'antd';
+import {AntMenu} from '../Menu/styled'
 
 const Menu = () => {
     return (
-        <Menu
+        <AntMenu
           onClick={this.handleClick}
           style={{ width: 256 }}
           defaultSelectedKeys={['1']}
@@ -19,7 +20,7 @@ const Menu = () => {
               <Menu.Item key="3">Option 3</Menu.Item>
           
           
-        </Menu>
+        </AntMenu>
       );
 }
   
