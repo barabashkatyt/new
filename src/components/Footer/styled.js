@@ -17,7 +17,7 @@ const AboutFooter = styled.footer`
     AboutFooter.Left = styled.div`
         width:50%;
         height: 100%;
-        width: 337px;
+        min-width: 337px;
         height: 14px;
         color: #9c9c9c;
         text-decoration: none;
@@ -37,10 +37,13 @@ const AboutFooter = styled.footer`
         width: 50%;
         height: 100%;
         display: flex;
-        margin-right: 12%;
+        min-width: 300px;
+        
+        
             ul {
                 display:flex;
-                margin-left: 50%;
+                
+        
             }
             .social-links__link{
                 width: 30px;

@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 
 import avatar from '../../images/avatar.PNG'
 import profileImage from '../../images/cv_img.PNG'
-import { Header, Footer  } from '../../components';
+import { Header , Footer, Aside , Button} from '../../components';
+
 
 
 
@@ -19,13 +20,7 @@ import { Header, Footer  } from '../../components';
         <Header/>
         <div class="about">
         <div class="about__center">
-            <aside class="center--aside">
-                <ul>
-                    <li class="active"><a href='/about.html'><span class="icon-user-secret"> </span>Обо мне</a></li>
-                    <li><a href='/career.html'><span class="icon-rocket"> </span>Карьерный путь</a></li>
-                    <li><a href='/portfolio.html'><span class="icon-suitcase"> </span>Портфолио </a></li>
-                </ul>
-            </aside>
+            <Aside />
             <div class="center--section">
                 <img src={profileImage} class="center--section-image" alt="Profile image"></img>
                 <article class="about__article">
@@ -47,7 +42,7 @@ import { Header, Footer  } from '../../components';
                 </div>
                 
 
-                <a href="" class="download-cv">Скачать резюме</a>
+                <Button onClick={history.push("/")}>Скачать резюме</Button>
                 </article> 
             </div>
         </div>

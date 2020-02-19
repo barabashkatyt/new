@@ -6,6 +6,8 @@ import  './styled.scss';
 import { Link } from 'react-router-dom';
 import backgroundImage from '../../images/geometry2.png'
 import avatar from '../../images/avatar.PNG'
+import { Button } from '../../components';
+import { Btn } from '../../components/Button/styled';
 
 
   const IndexPage = () => {
@@ -23,7 +25,8 @@ import avatar from '../../images/avatar.PNG'
             <h2 class="card__name">Константин  <br /> Константинов</h2>
 
             <div class="card__footer">
-                <Link to={''} class="card__link">Перейти на сайт</Link>
+              <Btn.Card>Перейти на сайт</Btn.Card>
+                
             </div>
           </div>            
         </div>
