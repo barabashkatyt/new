@@ -21,7 +21,7 @@ const Btn = styled.button`
 `
 
 Btn.Card = styled.button`
-    //position: absolute;
+    position: absolute;
     color: #ffffff;
     background-color: #33c1e3; 
     font-weight: bold;

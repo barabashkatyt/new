@@ -51,7 +51,7 @@ const AboutFooter = styled.footer`
                 margin-left: 8px;
                 background-color: #9c9c9c;
                 border-radius: 50%;
-                
+                margin-top: 10px;    
             
                 &:hover{
                     background-color: #33c1e3;

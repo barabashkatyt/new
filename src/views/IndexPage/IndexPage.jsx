@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useImperativeHandle } from 'react'
 import history from '../../history'
 
 
@@ -9,32 +9,42 @@ import avatar from '../../images/avatar.PNG'
 import { Button } from '../../components';
 import { Btn } from '../../components/Button/styled';
 
+class IndexPage extends React.Component {
 
-  const IndexPage = () => {
-   // window.localStorage.clear()
-    return (
-      
-      <Fragment >
-        <div className = 'cardwrapper' 
-          style ={{  backgroundImage: "url(" + backgroundImage + ")"}}>
-         
-          <div className = 'card'>
+HandleClick = () => {
+  history.push("/about");
+}
 
-          <img src = {avatar} class="card__image" alt="Profile Image"></img>
 
-            <h2 class="card__name">Константин  <br /> Константинов</h2>
-
-            <div class="card__footer">
-              <Btn.Card>Перейти на сайт</Btn.Card>
-                
-            </div>
-          </div>            
-        </div>
-      </Fragment>
-      
-      
-    )
-  }
+  render () {
+    // window.localStorage.clear()
+     return (
+       
+       <Fragment >
+         <html style ={{  backgroundImage: "url(" + backgroundImage + ")" }}>
+         <div className = 'cardwrapper' 
+           >
+          
+           <div className = 'card'>
+ 
+           <img src = {avatar} class="card__image" alt="Profile Image"></img>
+ 
+             <h2 class="card__name">Константин  <br /> Константинов</h2>
+ 
+             <div class="card__footer">
+               <Btn.Card onClick = {this.HandleClick}>Перейти на сайт</Btn.Card>
+                 
+             </div>
+           </div>            
+         </div>
+         </html>
+       </Fragment>
+       
+       
+     )
+   }
+}
+  
   
   export default IndexPage
   
