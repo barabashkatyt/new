@@ -11,12 +11,24 @@ import {Popover} from 'antd'
 
 const Header = () => {
 
- 
+ var styledPopover = {
+  borderRadius:'25px',
+  
+ }
+
+ var styledUl = { 
+  listStyleType: 'none',
+  lineHeight: '20px'
+
+ }
+ var styledLi = {
+  color:'inherit'
+ }
 
   const content = (
-    <div>
-      <ul>
-        <li><a href='#'>kostya@mail.ru</a></li>
+    <div >
+      <ul style={ styledUl}>
+        <li style={styledLi}><a href='#'>kostya@mail.ru</a></li>
         <li><a href='#'>+7 921 887 62 37</a></li>
         <li><a href='#'>kostik_</a></li>
         </ul>
@@ -36,7 +48,7 @@ const Header = () => {
             </AboutHeader.LeftText>
         </AboutHeader.Left>
         <AboutHeader.Right>
-        <Popover content={content} >
+        <Popover content={content} style={styledPopover}>
           <AboutHeader.RightLink>
             Мои контакты 
           </AboutHeader.RightLink>

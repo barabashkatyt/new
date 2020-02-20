@@ -4,7 +4,7 @@ import 'antd/dist/antd.css';
 import { Menu } from 'antd';
 import {AntMenu} from '../Menu/styled'
 
-const Menu = () => {
+const MenuAside = () => {
     return (
     <AntMenu
       onClick={this.handleClick}
@@ -25,4 +25,4 @@ const Menu = () => {
 }
   
     
-export default Menu
+export default MenuAside

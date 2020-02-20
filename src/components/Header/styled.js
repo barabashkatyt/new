@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 //import { styleguide } from '../../constants'
+import {Popover} from 'antd'
 
 const AboutHeader = styled.header`
-    width: 100%;
+    width: 100vw;
+    min-width: 350px;
     height: 80px;
     margin: 0 auto;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -11,8 +13,11 @@ const AboutHeader = styled.header`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+    @media (min-width: 320px) {
+        
+      }
     `
+
 AboutHeader.Left = styled.div`
     width:50%;
     height:100%;
@@ -41,6 +46,16 @@ AboutHeader.LeftText = styled.div`
     line-height: 28px;
     margin-left: 10px;
     margin-bottom: 10px;
+
+    @media (max-width: 760px) {
+     font-size: 14px;
+     line-height: 20px;   
+    }
+    @media (max-width: 515px) {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 25px;   
+       }
     `
 AboutHeader.Right = styled.div`
     width:50%;
@@ -49,11 +64,14 @@ AboutHeader.Right = styled.div`
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 20%; 
+    @media (max-width: 760px) {
+        
+       }
+
     `
 
 AboutHeader.RightLink = styled.div`
     color: #33c1e3;
-    width: 150px;
     height: 20px;
     font-size: 16px;
     font-weight: 550;
@@ -61,7 +79,6 @@ AboutHeader.RightLink = styled.div`
     font-family: "Fira Sans","Font Awesome",sans-serif;
     margin-top: 28px; 
     justify-content: center;
-    padding-left: 17px;
     padding-bottom: 20px;        
     border-bottom: 2px dotted #5ac7e5;
     position:relative;
@@ -69,6 +86,9 @@ AboutHeader.RightLink = styled.div`
           color: #e85f61;
           border-bottom:2px dotted #e85f61;
         }
+        @media (max-width: 760px) {
+            display:none;   
+           }
     `
 
 

@@ -3,7 +3,7 @@ import { Router, Switch, Route } from 'react-router-dom'
 import history from './history'
 
 import {IndexPage, AboutPage ,CareerPage, PortfolioPage} from './views'
-import { Header,Footer,Aside } from './components'
+import { Header,Footer,Aside} from './components'
 
 import './styles/app.scss'
 
@@ -12,8 +12,10 @@ function App () {
     <div class='wrapper' >
       <Header />
       <main className='main'>
+      <Aside></Aside>
       <Router history={history}>
-        <Aside></Aside>
+        
+        
         <Switch>
           
           <Route path='/portfolio' component={PortfolioPage} />
