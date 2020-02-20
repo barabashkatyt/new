@@ -12,16 +12,13 @@ function App () {
     <div class='wrapper' >
       <Header />
       <main className='main'>
-      <Aside></Aside>
       <Router history={history}>
-        
-        
+        <Aside />
         <Switch>
-          
           <Route path='/portfolio' component={PortfolioPage} />
           <Route path='/career' component={CareerPage} />
-          <Route path='/about' component={AboutPage} />
-          <Route path='/' component={IndexPage} />
+          <Route exact path='/' component={AboutPage} />
+          {/* <Route exact path='/' component={IndexPage} /> */}
           <Route path='*' render={() => <div>404</div>} />
         </Switch>
         

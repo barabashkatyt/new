@@ -3,7 +3,8 @@ import Button from './Button'
 import Footer from './Footer'
 import Aside from './Aside'
 import Menu from './Menu'
-
+import Popover from './Popover'
+import Contacts from './Contacts'
 
 
 export {
@@ -11,5 +12,7 @@ export {
   Button,
   Footer,
   Aside,
-  Menu
+  Menu,
+  Popover,
+  Contacts
 }

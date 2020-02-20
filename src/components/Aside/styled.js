@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const CenterAside = styled.aside`
     width: 30vw;
+    height: 97vh;
     color: #414141;
     font-size: 18px;
     font-weight: 400;
@@ -39,10 +40,7 @@ const CenterAside = styled.aside`
         border-right: 6px solid #33c1e3;
         color: #33c1e3;
     }
-
-
     `
-
 
 export {
     CenterAside

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
-
+import 'antd/dist/antd.css';
 import  './styled.scss';
-
+import { Row, Col } from 'antd';
 import universityImage from '../../images/Layer_4.png'
 
 
