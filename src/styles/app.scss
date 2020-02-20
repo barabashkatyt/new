@@ -6,9 +6,10 @@
         
     }
     .main{
+        margin-top: 2px;
         display: flex;
-        //flex: 1 4;
-        justify-content: row;
+        flex-direction: row;
+        
     }
 }
 

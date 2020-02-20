@@ -39,11 +39,11 @@ const AboutFooter = styled.footer`
         height: 100%;
         display: flex;
         min-width: 300px;
-        list-decoration:none;
+        
         
             ul {
                 display:flex;
-                
+                list-style-type:none;        
         
             }
             .social-links__link{

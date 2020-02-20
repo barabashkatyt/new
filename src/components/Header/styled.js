@@ -11,6 +11,7 @@ const AboutHeader = styled.header`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
     `
 AboutHeader.Left = styled.div`
     width:50%;

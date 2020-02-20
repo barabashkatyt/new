@@ -2,7 +2,7 @@ import styled from 'styled-components'
 //import { styleguide } from '../../constants'
 
 const CenterAside = styled.aside`
-        width: 30%;
+        width: 30vw;
         color: #414141;
         font-size: 18px;
         font-weight: 400;

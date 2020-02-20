@@ -1,15 +1,12 @@
-html{
-    height: 100%;
-
-}
-
-.root{
-    height: 100%;
+.wrapper {
+    .header {
+        display: none;
+    }
 }
 
 .cardwrapper{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     
 }
 .card {

@@ -2,8 +2,8 @@ import React, { Fragment } from 'react'
 import history from '../../history'
 import  './styled.scss';
 import { Link } from 'react-router-dom';
+import universityImage from '../../images/Layer_4.png'
 
-import avatar from '../../images/avatar.PNG'
 
 class CareerPage extends React.Component {
 
@@ -20,7 +20,7 @@ render () {
         <div className="career__career--path-name"> Карьерный путь </div>
         <div className="career__career--path">
         <div className="career__career--path timeline__photo">
-            <img src="/images/Layer_4.png" alt="University image"></img>
+            <img src={universityImage} alt="University image"></img>
         </div>
     <ul className="timeline">
         <li className="timeline--about">   
